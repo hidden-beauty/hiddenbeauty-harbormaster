@@ -1,0 +1,10 @@
+[Unit]
+Description=Run the Harbormaster updater
+
+[Service]
+ExecStart=/usr/local/bin/harbormaster
+ExecStartPre=/usr/bin/git pull
+WorkingDirectory=/root/harbormaster-personal
+
+[Install]
+WantedBy=multi-user.target

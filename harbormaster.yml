@@ -1,0 +1,11 @@
+apps:
+
+  nginx-proxy:
+    url: https://github.com/mayhem/nginx-proxy.git
+    branch: main
+
+  hiddenbeauty.ch:
+    url: https://github.com/hidden-beauty/hiddenbeauty-web.git
+    compose_config:
+      - hiddenbeauty/docker-compose.yml
+    branch: main

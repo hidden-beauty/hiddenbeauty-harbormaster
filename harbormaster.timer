@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Harbormaster every few minutes.
+Requires=harbormaster.service
+
+[Timer]
+Unit=harbormaster.service
+OnUnitInactiveSec=5m
+
+[Install]
+WantedBy=timers.target
