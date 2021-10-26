@@ -9,3 +9,7 @@ apps:
     compose_config:
       - hiddenbeauty/docker-compose.yml
     branch: main
+
+  graylog:
+    url: https://github.com/mayhem/graylog-docker-compose.git
+    branch: main
